@@ -1,21 +1,20 @@
 #!groovy
 pipeline {
     agent any
-
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                bat "echo This is Build"
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                bat "echo This is Test"
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                bat "echo This is Deploy"
             }
         }
     }
